@@ -24,4 +24,14 @@ export const TextSpan = styled.span`
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+
+  ${({ marginRDefault }) => marginRDefault && "margin-right: 1em;"};
+  ${({ linkLike }) =>
+    linkLike &&
+    `
+      color: cornflowerblue;
+      cursor: pointer;
+      :hover { color: blue; }
+  `}
+  ${({ isActive }) => isActive && "color: blue;"}
 `;
