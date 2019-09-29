@@ -112,5 +112,119 @@
       "gate": "C11",
       "seat": "1C"
     }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33731",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "KSH"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "IKA"
+    },
+    "departure": 1523602310,
+    "detail": {
+      "boarding": 1523601041,
+      "flight_number": "LH2021",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33711",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "TEH"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "QOM"
+    },
+    "departure": 1523602230,
+    "detail": {
+      "boarding": 1523601041,
+      "flight_number": "LH2098",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33111",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "TEH"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "departure": 1113602230,
+    "detail": {
+      "boarding": 1113601041,
+      "flight_number": "LH2098",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e700f33111",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "SCX"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "departure": 1013602230,
+    "detail": {
+      "boarding": 1013601041,
+      "flight_number": "LH2098",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-5fdf-446b-91d5-52e700f33111",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "IKA"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "departure": 1019602230,
+    "detail": {
+      "boarding": 1019601041,
+      "flight_number": "LH2098",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "02f77c9f-5fdf-446b-91d5-52e700f33111",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "QOM"
+    },
+    "departure": 1019602230,
+    "detail": {
+      "boarding": 1019601041,
+      "flight_number": "LH2098",
+      "gate": "C11",
+      "seat": "1C"
+    }
   }
 ]
