@@ -1,7 +1,7 @@
 import React from "react";
-import { FlexboxDiv } from "./layouts.js";
+import { FlexboxDiv, TextSpan } from "./layouts.js";
 import dateFormat from "dateformat";
-import { DATE_FORMAT } from "./helper";
+import { DATE_FORMAT } from "./helper.js";
 
 const flight = ({
   segmentId,
@@ -14,23 +14,27 @@ const flight = ({
   const mainInfo = (
     <div>
       <span>{`${origin.value} -> ${destination.value}`}</span>
-      <span>{detail.flightNumber}</span>
+      <div>
+        <span>{detail.flightNumber}</span>
+        <span>Departure: {dateFormat(departure, DATE_FORMAT)}</span>
+      </div>
     </div>
   );
 
   const boardingInfo = (
     <div>
-      <span>Departure: {dateFormat(departure, DATE_FORMAT)}</span>
       <span>Boarding: {dateFormat(detail.boarding, DATE_FORMAT)}</span>
-      <span>Gate: {detail.gate}</span>
-      <span>Seat: {detail.seat}</span>
+      <div>
+        <span>Gate: {detail.gate}</span>
+        <span>Seat: {detail.seat}</span>
+      </div>
     </div>
   );
   return (
-    <div key={segmentId}>
+    <FlexboxDiv key={segmentId}>
       {mainInfo}
       {boardingInfo}
-    </div>
+    </FlexboxDiv>
   );
 };
 
