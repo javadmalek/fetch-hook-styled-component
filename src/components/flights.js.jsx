@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { FlexboxDiv, TextSpan } from "./layouts.js";
 import dateFormat from "dateformat";
-import { DATE_FORMAT, DATE_FORMAT_HMS } from "./helper";
+import { DATE_FORMAT, DATE_FORMAT_HM } from "./helper";
 import styled from "styled-components";
 
 const FlightNumberSpan = styled.span`
@@ -11,7 +11,7 @@ const FlightNumberSpan = styled.span`
   padding: 0.5em;
 `;
 
-const flight = ({
+const renderFlight = ({
   segmentId,
   type,
   origin,
@@ -19,6 +19,7 @@ const flight = ({
   departure,
   detail
 }) => {
+  if (type !== "FLIGHT") return null;
   const mainInfo = (
     <FlexboxDiv flexDirection="column" alignItems="center">
       <TextSpan
@@ -35,7 +36,7 @@ const flight = ({
         Departure: {dateFormat(departure, DATE_FORMAT)}
       </TextSpan>
       <TextSpan paddingS>
-        Boarding: {dateFormat(detail.boarding, DATE_FORMAT_HMS)}
+        Boarding: {dateFormat(detail.boarding, DATE_FORMAT_HM)}
       </TextSpan>
       <FlexboxDiv justifyContent="space-between">
         <TextSpan paddingS>Gate: {detail.gate}</TextSpan>
@@ -59,10 +60,9 @@ const flight = ({
 };
 
 const Flights = ({ flights }) => {
-  console.log(flights);
   if (flights === undefined || flights.length === 0) return null;
 
-  const list = flights.map(item => flight(item));
+  const list = flights.map(item => renderFlight(item));
   return <FlexboxDiv flexWrap="wrap">{list}</FlexboxDiv>;
 };
 
