@@ -8,7 +8,7 @@ const HookFetchFlights = url => {
   const parseData = data => camelcaseKeys(data, { deep: true });
 
   useEffect(() => {
-    if (!!url) {
+    if (url) {
       fetch(url)
         .then(response => response.json())
         .then(data => setData(parseData(data)));
