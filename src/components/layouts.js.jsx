@@ -23,7 +23,7 @@ export const FlexboxDiv = styled.div`
     ${({ ghostWhiteBg }) => ghostWhiteBg && "background: ghostwhite;"}
     ${({ borderRadius }) => borderRadius && "border-radius: 0.25em;"}
     ${({ paddingDefault }) => paddingDefault && "padding: 1em;"}
-    ${({ w30 }) => w30 && "min-width: 30%;"}
+    ${({ w30 }) => w30 && "min-width: 30%; max-width: 30%;"}
     ${({ widthAuto }) => widthAuto && "width: auto;"}
     
     @media (max-width: 768px) {
