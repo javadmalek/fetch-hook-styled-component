@@ -1,21 +1,116 @@
 [
-    {
-        "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33723",
-        "type": "FLIGHT",
-        "origin": {
-            "type": "AIRPORT",
-            "value": "TXL"
-        },
-        "destination": {
-            "type": "AIRPORT",
-            "value": "MUC"
-        },
-        "departure": 1521602800,
-        "detail": {
-            "boarding": 1523601001,
-            "flight_number": "LH2031",
-            "gate": "C12",
-            "seat": "12C"
-        }
-   }
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33723",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "MUC"
+    },
+    "departure": 1521602800,
+    "detail": {
+      "boarding": 1523601001,
+      "flight_number": "LH2031",
+      "gate": "C12",
+      "seat": "12C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33724",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "SCX"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "MUC"
+    },
+    "departure": 1423602840,
+    "detail": {
+      "boarding": 1423601041,
+      "flight_number": "LH2032",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33718",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "IKA"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "MUC"
+    },
+    "departure": 1573602810,
+    "detail": {
+      "boarding": 1573601041,
+      "flight_number": "KJ2052",
+      "gate": "C11",
+      "seat": "10C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33700",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "SCX"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "IKA"
+    },
+    "departure": 1523602870,
+    "detail": {
+      "boarding": 1523601011,
+      "flight_number": "LH2065",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33704",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "MSH"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "MUC"
+    },
+    "departure": 1523602790,
+    "detail": {
+      "boarding": 1523601041,
+      "flight_number": "LH2033",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  },
+  {
+    "segment_id": "07f77c9f-7fdf-446b-91d5-52e900f33735",
+    "type": "FLIGHT",
+    "origin": {
+      "type": "AIRPORT",
+      "value": "KSH"
+    },
+    "destination": {
+      "type": "AIRPORT",
+      "value": "TXL"
+    },
+    "departure": 1523602560,
+    "detail": {
+      "boarding": 1523601041,
+      "flight_number": "LH2068",
+      "gate": "C11",
+      "seat": "1C"
+    }
+  }
 ]
